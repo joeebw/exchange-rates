@@ -4,7 +4,7 @@ function CurrencyRow({currencyOptions, selectedcurrency, onChangeCurrency, amoun
     <div>
       <input 
       type="number"
-      className="border-2 rounded-lg border-black h-10 text-2xl w-56 relative top-1" 
+      className="input input-md input-bordered input-warning w-36 sm:w-56 text-2xl relative top-1" 
       value={amount ? amount : ''} 
       onChange={onChangeAmount}
       />

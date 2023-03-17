@@ -66,9 +66,9 @@ function App() {
 
   return (
     <>
-      <div className={`${isLoaded ? 'flex' : 'hidden'} flex-col items-center bg-[#d7e63899] w-full h-[30rem] sm:h-[32rem] sm:w-[30rem] rounded-lg shadow-xl shadow-slate-800`}>
-        <h1 className='relative right-4 text-6xl font-bold my-16 text-center text-[#4d4d46]'>
-          Convert
+      <div className={`${isLoaded ? 'flex' : 'hidden'} flex-col items-center bg-[#d8e6383a] w-full px-6 h-[30rem] sm:h-[32rem] sm:w-[30rem] rounded-lg shadow-xl shadow-slate-800`}>
+        <h1 className='text-5xl sm:text-6xl font-bold my-16 text-center'>
+          CONVERT
         </h1>
         <CurrencyRow 
         currencyOptions={currencyOptions}
@@ -77,7 +77,7 @@ function App() {
         amount = {fromAmount}
         onChangeAmount = {handleFromAmountChange}
         />
-        <div className='w-[20rem]'><p className='text-6xl text-left'>=</p></div>
+        <div className='w-[15rem] sm:w-[20rem]'><p className='text-6xl text-left'>=</p></div>
         <CurrencyRow 
         currencyOptions={currencyOptions}
         selectedcurrency={toCurrency}
